@@ -1,3 +1,6 @@
+use AppleScript version "2.4" -- Yosemite (10.10) or later
+use scripting additions
+
 tell application "Safari"
 	set tabsList to front window's tabs as list --gets all open tabs
 	set tabsInfo to {}

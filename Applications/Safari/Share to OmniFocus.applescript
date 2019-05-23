@@ -1,6 +1,9 @@
 use AppleScript version "2.4" -- Yosemite (10.10) or later
 use scripting additions
 
+use AppleScript version "2.4" -- Yosemite (10.10) or later
+use scripting additions
+
 tell application "Safari"
 	activate
 	set activeTab to get current tab of front window

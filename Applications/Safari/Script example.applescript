@@ -1,3 +1,6 @@
+use AppleScript version "2.4" -- Yosemite (10.10) or later
+use scripting additions
+
 tell application "Safari"
 	
 	--if you have multiple windows, controlling/choosing them works much the same way as tabs
