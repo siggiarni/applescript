@@ -2,45 +2,38 @@ use AppleScript version "2.4" -- Yosemite (10.10) or later
 use scripting additions
 
 --on run {input, parameters}
-set the clipboard to "POP87-6000"
-delay 0.5
 
 tell application "Google Chrome" to activate
 
 tell application "System Events"
-	-- Select prodcut from dropdown
-	keystroke tab
-	keystroke tab
-	keystroke "p"
+	
+	-- Add link to clipboard	
+	set the clipboard to "https://twitter.com/HappySofficial"
 	delay 0.5
 	
-	-- Paste product Name
-	keystroke tab
+	-- Paste in Link
 	key down {command}
 	keystroke "v"
 	key up {command}
 	delay 0.5
 	
-	-- Paste product SKU        
+	-- Move to next field
 	keystroke tab
 	keystroke tab
+	keystroke tab
+	keystroke tab
+	delay 0.5
+	
+	-- Add link to clipboard
+	set the clipboard to "https://www.instagram.com/happysocks"
+	delay 0.5
+	
+	-- Paste in Link
 	key down {command}
 	keystroke "v"
 	key up {command}
 	delay 0.5
 	
-	-- Select one column
-	keystroke tab
-	keystroke (key code 125)
-	delay 0.5
-	keystroke return
-	delay 0.5
-	
-	-- Enable item
-	keystroke tab
-	delay 0.5
-	keystroke "e"
-	delay 0.5
 end tell
 
 --return input
