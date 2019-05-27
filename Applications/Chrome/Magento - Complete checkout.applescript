@@ -112,7 +112,7 @@ tell application "System Events"
 	--keystroke (key code 49)
 	
 	-- Click Go to Payment
-	delay 3
+	delay 1
 	keystroke tab
 	keystroke (key code 36)
 	
@@ -122,12 +122,12 @@ tell application "System Events"
 	keystroke (key code 49)
 	
 	-- Tick TOC box
-	delay 3
+	delay 1
 	keystroke tab
 	keystroke (key code 49)
 	
 	-- Click Place order
-	delay 3
+	delay 1
 	keystroke tab
 	keystroke (key code 36)
 	
