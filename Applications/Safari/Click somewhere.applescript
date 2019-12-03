@@ -1,0 +1,1 @@
+tell application "Safari" to activatetell application "System Events"	tell process "Safari"		click at {300, 100} -- {from left, from top}	end tellend tell
