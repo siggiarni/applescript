@@ -1,0 +1,17 @@
+tell application "System Events"
+	set frontApp to name of first application process whose frontmost is true
+end tell
+
+tell application "Finder"
+	get the bounds of the window of desktop
+end tell
+
+try
+	tell application frontApp
+		--get the bounds of the window of desktop
+		set the bounds of the front window to Â
+			{((3rd item of the result) / 2), 0, ((3rd item of the result)), (4th item of the result)}
+	end tell
+on error the error_message number the error_number
+	display dialog "Error: " & the error_number & ". " & the error_message buttons {"OK"} default button 1
+end try
