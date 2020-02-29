@@ -1,9 +1,6 @@
 use AppleScript version "2.4" -- Yosemite (10.10) or later
 use scripting additions
 
-use AppleScript version "2.4" -- Yosemite (10.10) or later
-use scripting additions
-
 tell application "Safari"
 	activate
 	set activeTab to get current tab of front window
@@ -14,9 +11,9 @@ end tell
 tell application "System Events"
 	tell process "Safari"
 		click (menu item "OmniFocus") of (menu "Share") of (menu item "Share") of (menu "File") of menu bar 1
-		delay 2
+		delay 4
 		keystroke activeName
-		delay 0.5
+		delay 1
 		click (button "Post") of window 1
 	end tell
 end tell
