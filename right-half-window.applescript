@@ -1,3 +1,6 @@
+use AppleScript version "2.4" -- Yosemite (10.10) or later
+use scripting additions
+
 tell application "System Events"
 	set frontApp to name of first application process whose frontmost is true
 end tell
