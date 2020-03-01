@@ -4,7 +4,7 @@ use scripting additions
 tell application "Google Chrome"
 	activate
 	delay 0.5
-	execute front window's active tab javascript "document.getElementById('foobar').select();"
+	execute front window's active tab javascript "document.getElementById('myInput').select();"
 end tell
 
 tell application "System Events"
