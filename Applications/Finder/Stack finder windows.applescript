@@ -2,16 +2,16 @@ use AppleScript version "2.4" -- Yosemite (10.10) or later
 use scripting additions
 
 tell application "Finder"
-
+	
 	set i to count (every Finder window where visible is true)
-
+	
 	set boundLeft to 0
 	set boundTop to 0
 	set boundWidth to 800
 	set boundHeight to 600
 	set offsetLeft to 20
 	set offsetTop to 25
-
+	
 	repeat with i from 1 to i
 		-- Position Finder window
 		set the bounds of Finder window i to Â
@@ -26,5 +26,5 @@ tell application "Finder"
 		set boundWidth to (boundWidth + offsetLeft)
 		set boundHeight to (boundHeight + offsetTop)
 	end repeat
-
+	
 end tell
