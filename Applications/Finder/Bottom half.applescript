@@ -6,4 +6,5 @@ tell application "Finder"
 	-- x, y, width, height
 	set the bounds of the front window to Â
 		{0, ((4th item of the result) / 2), (3rd item of the result), (4th item of the result)}
+	set the current view of the front window to column view
 end tell
