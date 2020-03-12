@@ -4,6 +4,6 @@ use scripting additions
 tell application "Finder"
 	set the current view of the front window to list view
 	
-	set the 
+	--set the 
 	
 end tell
