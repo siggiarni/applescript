@@ -11,12 +11,12 @@ tell application "Finder"
 	set desktopBoundsHeight to the ((4th item of the desktopBounds) / 2)
 	
 	get the bounds of the front window
-	set windowBounds to the result	
+	set windowBounds to the result
 	set windowBoundsX to the (desktopBoundsWidth - ((3rd item of the windowBounds) / 2))
 	set windowBoundsY to the (desktopBoundsHeight - ((4th item of the windowBounds) / 2))
 	set windowBoundsWidth to the ((3rd item of the windowBounds) + windowBoundsX)
 	set windowBoundsHeight to the ((4th item of the windowBounds) + windowBoundsY)
-
+	
 	set the bounds of the front window to Â
 		{windowBoundsX, windowBoundsY, windowBoundsWidth, windowBoundsHeight}
 	
