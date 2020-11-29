@@ -4,6 +4,6 @@ use scripting additions
 tell application "System Events"
 	tell process "Safari"
 		set frontmost to true
-		click menu item 17 of menu 7 of menu bar 1
+		click menu item 16 of menu 7 of menu bar 1
 	end tell
 end tell
